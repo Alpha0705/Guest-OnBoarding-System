@@ -19,7 +19,7 @@ npm -v
 
 ### 1. Clone the Repository
 Start by cloning the repository from GitHub:
-git clone https://github.com/your-username/digital-onboarding-system.git cd digital-onboarding-system
+git clone https://github.com/Alpha0705/Guest-OnBoarding-System cd digital-onboarding-system
 
 ### 2. Install Dependencies
 Navigate to the project directory and install the required dependencies:
