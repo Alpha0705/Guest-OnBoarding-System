@@ -18,7 +18,15 @@ app.set('view engine', 'ejs');
 app.use(express.static('public')); // For serving static files
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+// Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        console.log('Connected to MongoDB database.');
+    })
+    .catch((err) => {
+        console.error('Failed to connect to MongoDB:', err);
+    });
+
 
 // Define Schemas
 
